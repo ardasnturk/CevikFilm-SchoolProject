@@ -11,6 +11,7 @@ import FilmDetailScreen from './Stacks/MainStacks/FilmDetailPage';
 import CategoryScreen from './Stacks/CategoryStacks/Category';
 import CategorySectionScreen from './Stacks/CategoryStacks/CategorySection';
 import ProfileScreen from './Stacks/ProfileStacks/Profile';
+import AddFilmScreen from './Stacks/ProfileStacks/AddFilm';
 
 const LoginStacks = createStackNavigator(
     {
@@ -28,7 +29,8 @@ const MainTabs = createStackNavigator(
     {
         HomeScreen: MainScreen,
         Search: SearchScreen,
-        FilmDetail: FilmDetailScreen
+        FilmDetail: FilmDetailScreen,
+        AddFilm: AddFilmScreen
     },
     {
         defaultNavigationOptions: {
@@ -48,7 +50,8 @@ const CategoryTabs = createStackNavigator(
     {
         Category: CategoryScreen,
         CategorySection: CategorySectionScreen,
-        FilmDetail: FilmDetailScreen
+        FilmDetail: FilmDetailScreen,
+        AddFilm: AddFilmScreen
     },
     {
         defaultNavigationOptions: {
@@ -67,7 +70,8 @@ const CategoryTabs = createStackNavigator(
 const ProfileTabs = createStackNavigator(
     {
         Profile: ProfileScreen,
-        FilmDetail: FilmDetailScreen
+        FilmDetail: FilmDetailScreen,
+        AddFilm: AddFilmScreen
     }, 
     {
         defaultNavigationOptions: {
@@ -118,11 +122,10 @@ const BottomTabs = createBottomTabNavigator(
 
 const RootStack = createStackNavigator(
     {
-        LoginStacks: LoginStacks,
+        // LoginStacks: LoginStacks,
         Main: BottomTabs
     }, 
     {
-        initialRouteName: 'Main',
         defaultNavigationOptions: {
             header: null
         }

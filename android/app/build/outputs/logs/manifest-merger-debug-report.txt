@@ -1,0 +1,251 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:1:1-33:12
+MERGED from [:react-native-image-crop-picker] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-28:12
+MERGED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-47:12
+MERGED from [:react-native-vector-icons] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-gesture-handler] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-gesture-handler/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.57.6] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/react-native-0.57.6.aar/bc39006bb96885f3bcea3b347b2a836a/AndroidManifest.xml:2:1-15:12
+MERGED from [com.github.yalantis:ucrop:2.2.2-native] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/83b4c2f8c270d1719f5fafdd9d372434/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/34c1fbd8bbdfa2809fddab84b5c76a3e/AndroidManifest.xml:17:1-22:12
+MERGED from [id.zelory:compressor:2.1.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/compressor-2.1.0.aar/815f607b41b2b501d82bcda126151175/AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/7847c44ac5ee93e10bdf844976a6c45e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/304a8f536e61d702c776348af41f1a85/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/7917be5d3b19f09f23dceddf1bf2f691/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/a6bb2a3bb70b02bae326b8cdfd511d2e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/f71415d7ba2b1609e28c8d92d4c165c6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/801912587cd5e550706942a4034b8b3c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/9f1cb8a3b782cc4589934dc62584df7d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/d42465bb209980e200985fcb17f34b21/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/c26bd65b8eb702c531dad5e1c14931d0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/7e97df629fd9e640424f8d9ec30386e7/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/584a524a14bc346dfcddcb1c29df33b6/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/620c1908f062b361ca92ece744f3695e/AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/55010802843e57cc9fea7fbd2b5064fa/AndroidManifest.xml:1:1-3:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/f93c8528bb49c9ea20cc256bd19fa011/AndroidManifest.xml:2:1-9:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/ed5a4f255c5f682372b444c6a0e3309d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/f6306f3e3ad2b392e4411b3e607b9b8d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/7964127b80294129c0b06e6a3800c58f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/4f8513bfb4a1739df6beecb58317f8fd/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:1:1-33:12
+	package
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:2:5-28
+		INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:1:1-33:12
+		INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:1:1-33:12
+		INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:5-67
+MERGED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:5-67
+	android:name
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.57.6] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/react-native-0.57.6.aar/bc39006bb96885f3bcea3b347b2a836a/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.57.6] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/react-native-0.57.6.aar/bc39006bb96885f3bcea3b347b2a836a/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:5:22-75
+uses-permission#android.permission.CAMERA
+ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:6:5-64
+	android:name
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:6:22-62
+uses-feature#android.hardware.camera
+ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:7:5-85
+	android:required
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:7:58-82
+	android:name
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:7:19-57
+uses-feature#android.hardware.camera.front
+ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:8:5-91
+	android:required
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:8:64-88
+	android:name
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:8:19-63
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:9:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:10:5-81
+MERGED from [:react-native-image-crop-picker] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:10:5-81
+MERGED from [:react-native-image-crop-picker] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:10:5-81
+MERGED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:33:5-81
+MERGED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:33:5-81
+	android:name
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:11:5-88
+	android:name
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:11:22-85
+application
+ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:13:5-31:19
+MERGED from [:react-native-image-crop-picker] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-26:19
+MERGED from [:react-native-image-crop-picker] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-26:19
+MERGED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:35:5-45:19
+MERGED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:35:5-45:19
+MERGED from [com.facebook.react:react-native:0.57.6] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/react-native-0.57.6.aar/bc39006bb96885f3bcea3b347b2a836a/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.57.6] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/react-native-0.57.6.aar/bc39006bb96885f3bcea3b347b2a836a/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/620c1908f062b361ca92ece744f3695e/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/620c1908f062b361ca92ece744f3695e/AndroidManifest.xml:11:5-20
+MERGED from [org.webkit:android-jsc:r174650] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/55010802843e57cc9fea7fbd2b5064fa/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/55010802843e57cc9fea7fbd2b5064fa/AndroidManifest.xml:2:3-17
+	android:label
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:15:7-39
+	android:icon
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:16:7-41
+	android:allowBackup
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:17:7-34
+	android:theme
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:18:7-38
+	android:name
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:14:7-38
+activity#com.cevikfilm.MainActivity
+ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:19:7-29:18
+	android:label
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:21:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:23:9-51
+	android:configChanges
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:22:9-79
+	android:name
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:20:9-37
+intent-filter#action:name:android.intent.action.DOWNLOAD_COMPLETE+action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:24:9-28:25
+action#android.intent.action.MAIN
+ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:25:13-65
+	android:name
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:25:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:26:13-73
+	android:name
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:26:23-70
+action#android.intent.action.DOWNLOAD_COMPLETE
+ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:27:13-77
+	android:name
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:27:21-75
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:30:7-84
+	android:name
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:30:17-81
+uses-sdk
+INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-image-crop-picker] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:6:5-8:41
+MERGED from [:react-native-image-crop-picker] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:6:5-8:41
+MERGED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-gesture-handler/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-gesture-handler/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.57.6] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/react-native-0.57.6.aar/bc39006bb96885f3bcea3b347b2a836a/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.57.6] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/react-native-0.57.6.aar/bc39006bb96885f3bcea3b347b2a836a/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.2-native] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/83b4c2f8c270d1719f5fafdd9d372434/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.2-native] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/ucrop-2.2.2-native.aar/83b4c2f8c270d1719f5fafdd9d372434/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/34c1fbd8bbdfa2809fddab84b5c76a3e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/34c1fbd8bbdfa2809fddab84b5c76a3e/AndroidManifest.xml:20:5-44
+MERGED from [id.zelory:compressor:2.1.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/compressor-2.1.0.aar/815f607b41b2b501d82bcda126151175/AndroidManifest.xml:8:5-10:41
+MERGED from [id.zelory:compressor:2.1.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/compressor-2.1.0.aar/815f607b41b2b501d82bcda126151175/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/7847c44ac5ee93e10bdf844976a6c45e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/7847c44ac5ee93e10bdf844976a6c45e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/304a8f536e61d702c776348af41f1a85/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/304a8f536e61d702c776348af41f1a85/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/7917be5d3b19f09f23dceddf1bf2f691/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/7917be5d3b19f09f23dceddf1bf2f691/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/a6bb2a3bb70b02bae326b8cdfd511d2e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/a6bb2a3bb70b02bae326b8cdfd511d2e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/f71415d7ba2b1609e28c8d92d4c165c6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/f71415d7ba2b1609e28c8d92d4c165c6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/801912587cd5e550706942a4034b8b3c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/801912587cd5e550706942a4034b8b3c/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/9f1cb8a3b782cc4589934dc62584df7d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/9f1cb8a3b782cc4589934dc62584df7d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/d42465bb209980e200985fcb17f34b21/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/d42465bb209980e200985fcb17f34b21/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/c26bd65b8eb702c531dad5e1c14931d0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/c26bd65b8eb702c531dad5e1c14931d0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/7e97df629fd9e640424f8d9ec30386e7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/7e97df629fd9e640424f8d9ec30386e7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/584a524a14bc346dfcddcb1c29df33b6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/584a524a14bc346dfcddcb1c29df33b6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/620c1908f062b361ca92ece744f3695e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/620c1908f062b361ca92ece744f3695e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/f93c8528bb49c9ea20cc256bd19fa011/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/f93c8528bb49c9ea20cc256bd19fa011/AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/ed5a4f255c5f682372b444c6a0e3309d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/ed5a4f255c5f682372b444c6a0e3309d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/f6306f3e3ad2b392e4411b3e607b9b8d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/f6306f3e3ad2b392e4411b3e607b9b8d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/7964127b80294129c0b06e6a3800c58f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/7964127b80294129c0b06e6a3800c58f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/4f8513bfb4a1739df6beecb58317f8fd/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/ardasenturk/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/4f8513bfb4a1739df6beecb58317f8fd/AndroidManifest.xml:20:5-44
+INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml
+provider#android.support.v4.content.FileProvider
+ADDED from [:react-native-image-crop-picker] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:9-21:20
+MERGED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:36:9-44:20
+MERGED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:36:9-44:20
+	android:grantUriPermissions
+		ADDED from [:react-native-image-crop-picker] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-47
+	android:authorities
+		ADDED from [:react-native-image-crop-picker] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:13-60
+	android:exported
+		ADDED from [:react-native-image-crop-picker] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:13-37
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-image-crop-picker] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:13-20:58
+MERGED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:41:13-43:58
+MERGED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:41:13-43:58
+	android:resource
+		ADDED from [:react-native-image-crop-picker] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:17-55
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:19:17-67
+activity#com.yalantis.ucrop.UCropActivity
+ADDED from [:react-native-image-crop-picker] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:9-25:72
+	android:theme
+		ADDED from [:react-native-image-crop-picker] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:13-69
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/react-native-image-crop-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:13-60
+uses-permission#com.android.vending.CHECK_LICENSE
+ADDED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-73
+	android:name
+		ADDED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:22-70
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:5-68
+	android:name
+		ADDED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:27:5-79
+	android:name
+		ADDED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:27:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:30:5-76
+	android:name
+		ADDED from [:rn-fetch-blob] /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/node_modules/rn-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:30:22-73
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/ardasenturk/Desktop/CevikFilm/CevikFilm/android/app/src/main/AndroidManifest.xml:1:1-33:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4

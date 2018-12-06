@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, FlatList, StyleSheet, TextInput, Dimensions, TouchableOpacity, Image, TouchableWithoutFeedback } from 'react-native';
+import { View, Text, FlatList, StyleSheet, TextInput, Dimensions, TouchableOpacity, Image, ActivityIndicator, TouchableWithoutFeedback } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import Films from '../../Example/Film.json';
 
@@ -11,7 +11,9 @@ class Search extends Component {
         super(props);
         this.state = {
             title: '',
-            data: []
+            data: [],
+            error: null,
+            loading: false
         }
     }
     static navigationOptions = ({navigation}) => {
@@ -41,18 +43,47 @@ class Search extends Component {
     };
 
     componentWillMount() {
-        
+        // this.makeRemoteRequest();
     }
+
+    makeRemoteRequest = () => {
+        const url = `https://murmuring-dusk-96380.herokuapp.com/movies.json`;
+        this.setState({ loading: true });
+        fetch(url)
+            .then(res => res.json())
+            .then(res => {
+                console.log(res);
+                this.setState({ headData: res.slice(0, 5),
+                    data: res.slice(5, res.length),
+                    loading: false })
+            })
+            .catch(error => {
+                this.setState({ error, loading: false })
+            });
+    };
+
+    renderFooter = () => {
+        if (!this.state.loading) return null;
+
+        return (
+            <View style={{ flex: 1, alignSelf: 'center', alignItems: 'center', justifyContent: 'center', paddingVertical: 20, borderTopWidth: 1, borderColor: "#CED0CE" }}>
+                <ActivityIndicator animating size="large" />
+            </View>
+        );
+    };
 
     search() {
         let searchArray = [];
-        for (let i = 0; i < Films.length; i++) {
-            const element = Films[i];
-            if (element.Title.toLowerCase().includes(this.state.title.toLowerCase())) {
+        let allFilmLength = this.state.data.length
+        for (let i = 0; i < allFilmLength; i++) {
+            const element = this.state.data[i];
+            if (element.title.toLowerCase().includes(this.state.title.toLowerCase())) {
+                this.setState({ loading: true });
                 searchArray.push(element)
             }
         }
-        this.setState({ data: searchArray });
+        this.setState({ data: searchArray,
+                        loading: false });
     }
 
     render() {
@@ -71,6 +102,7 @@ class Search extends Component {
                 </View>
                 <View>
                     <FlatList 
+                    ListFooterComponent={this.renderFooter}
                     keyExtractor={item => item.imdbID}
                     data={this.state.data}
                     renderItem={({item}) => <SearchListItem item={item} navigation={this.props.navigation} />}
