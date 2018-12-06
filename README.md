@@ -9,4 +9,8 @@ Don't forget to type
 
 "npm install"
 
+and 
+
+"react-native link"
+
 in Terminal at your root project directory.
