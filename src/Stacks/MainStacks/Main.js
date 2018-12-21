@@ -6,10 +6,12 @@ import { View,
     Image,
     TouchableOpacity,
     Dimensions,
+    AsyncStorage,
     TouchableWithoutFeedback,
     ActivityIndicator,
     StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
+import firebase from 'firebase';
 import exampleFilms from '../../Example/Film.json';
 
 let width = Dimensions.get('window').width;
@@ -38,13 +40,53 @@ class Main extends Component {
             headData: [],
             loading: false,
             error: null,
+            currentUser: null,
+            userRole: null,
+            refreshing: false,
         }
     }
 
     componentWillMount() {
-        this.setState({ headData: exampleFilms.slice(0, 5) });
-        this.setState({ data: exampleFilms.slice(5, exampleFilms.length) });
-        // this.makeRemoteRequest();
+        const { currentUser } = firebase.auth()
+        if (currentUser !== null) {
+            this.setState({ currentUser })
+        }
+        //this.makeRemoteRequest();
+        this.getFilm();
+    }
+
+    async userRole(userRole) {
+        AsyncStorage.setItem('userRole', userRole);
+    } 
+
+    getFilm() {
+        this.setState({ loading: true });
+        
+        firebase.database().ref('/Films/')
+        .once('value', snap => {
+            let arr = Object.values(snap.val())
+            this.setState({ headData: arr.reverse().slice(0, 5),
+                            data: arr.reverse().slice(5, arr.reverse().length),
+                            refreshing: false,
+                            loading: false })
+        })
+        .catch(error => {
+            this.setState({ error, loading: false })
+            alert(error.message);
+        })
+    }
+
+    componentDidMount() {
+        const { currentUser } = firebase.auth()
+        if (currentUser !== null) {
+            firebase.database().ref(`/Users/${this.state.currentUser.uid}/`)
+            .once('value', (snap) => {
+            })
+            .then((res) => this.setState({ userRole: res.val().role }))
+            .then((res) => this.userRole(this.state.userRole))
+        } else {
+            this.userRole('notAuth');
+        }
     }
 
     makeRemoteRequest = () => {
@@ -73,9 +115,17 @@ class Main extends Component {
         );
     };
 
+    handlerRefresh = () => {
+        this.setState({
+            refreshing: true,
+        }, () => {
+            this.getFilm();
+        });
+    };
+
     render() {
         return (
-            <ScrollView style={styles.container}>
+            <View style={styles.container}>
                 <View>
                     <FlatList 
                         ListFooterComponent={this.renderFooter}
@@ -92,11 +142,13 @@ class Main extends Component {
                     <FlatList 
                         ListFooterComponent={this.renderFooter}
                         keyExtractor={item => item.imdbID}
+                        refreshing={this.state.refreshing}
+                        onRefresh={this.handlerRefresh}
                         data={this.state.data}
                         renderItem={({item}) => <FilmListItem item={item} navigation={this.props.navigation} />}
                     />
                 </View>
-            </ScrollView>
+            </View>
         );
     }
 }
@@ -122,7 +174,6 @@ class FilmListItem extends Component {
                         <Text style={styles.filmNameStyle} numberOfLines={2}> {this.props.item.title} </Text>
                         <Text style={styles.filmOtherStyle} numberOfLines={1}> Yıl : {this.props.item.year} </Text>
                         <Text style={[styles.filmOtherStyle, { width: width - 120 }]} numberOfLines={2}> Tür : {this.props.item.genre}</Text>
-                        <Text style={styles.filmOtherStyle} numberOfLines={1}> Derece :  {this.props.item.imdbRating}</Text>
                         <View style={{ flexDirection: 'row', margin: 10 }}>
                             <Image source={(require('../../Images/star.png'))} style={{ width: 16, height: 16 }} />
                             <Text style={styles.filmOtherStyle}>{this.props.item.imdbRating}</Text>

@@ -122,7 +122,7 @@ const BottomTabs = createBottomTabNavigator(
 
 const RootStack = createStackNavigator(
     {
-        // LoginStacks: LoginStacks,
+        LoginStacks: LoginStacks,
         Main: BottomTabs
     }, 
     {

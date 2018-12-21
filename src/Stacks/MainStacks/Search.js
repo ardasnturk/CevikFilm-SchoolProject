@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, FlatList, StyleSheet, TextInput, Dimensions, TouchableOpacity, Image, ActivityIndicator, TouchableWithoutFeedback } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import Films from '../../Example/Film.json';
+import firebase from 'firebase';
 
 
 const width = Dimensions.get('window').width
@@ -11,6 +11,7 @@ class Search extends Component {
         super(props);
         this.state = {
             title: '',
+            user: '',
             data: [],
             error: null,
             loading: false
@@ -43,7 +44,21 @@ class Search extends Component {
     };
 
     componentWillMount() {
-        // this.makeRemoteRequest();
+        //this.makeRemoteRequest();
+        this.getFilm();
+    }
+
+    getFilm() {
+        this.setState({ loading: true });
+        firebase.database().ref('/Films/')
+        .once('value', snap => {
+            this.setState({ data: snap.val(),
+                            loading: false })
+        })
+        .catch(error => {
+            this.setState({ error, loading: false })
+            alert(error.message);
+        })
     }
 
     makeRemoteRequest = () => {
@@ -52,9 +67,7 @@ class Search extends Component {
         fetch(url)
             .then(res => res.json())
             .then(res => {
-                console.log(res);
-                this.setState({ headData: res.slice(0, 5),
-                    data: res.slice(5, res.length),
+                this.setState({ data: res,
                     loading: false })
             })
             .catch(error => {
@@ -84,6 +97,34 @@ class Search extends Component {
         }
         this.setState({ data: searchArray,
                         loading: false });
+    }
+
+    searchUser() {
+        let searchArray = [];
+        let allUserLength = this.state.data.length
+        for (let i = 0; i < allUserLength; i++) {
+            const element = this.state.data[i];
+            if (element.user.toLowerCase().includes(this.state.user.toLowerCase())) {
+                this.setState({ loading: true });
+                searchArray.push(element)
+            }
+        }
+        this.setState({ data: searchArray,
+                        loading: false });
+    }
+
+    onAdmin() {
+        return (
+            <TextInput
+            placeholder='Kullanıcı...'
+            placeholderTextColor='#E8B706'
+            underlineColorAndroid='#00000000'
+            autoFocus
+            style={{ width: width - 20, height: 35, marginTop: 10, color: 'white', borderRadius: 5 }}
+            onSubmitEditing={() => this.searchUser()}
+            onChangeText={(user) => this.setState({user})}
+            />
+        );
     }
 
     render() {
@@ -129,12 +170,11 @@ class SearchListItem extends Component {
             })}
             >
                 <View style={{ alignSelf: 'center', flexDirection: 'row', width: width - 20, margin: 10, paddingBottom: 10, borderColor: 'grey', borderBottomWidth: 1 }}>
-                    <Image source={{uri: this.props.item.Poster}} style={styles.imageStyle} />
+                    <Image source={{uri: this.props.item.poster}} style={styles.imageStyle} />
                     <View>
-                        <Text style={styles.filmNameStyle} numberOfLines={2}> {this.props.item.Title} </Text>
-                        <Text style={styles.filmOtherStyle} numberOfLines={1}> Yıl : {this.props.item.Released} </Text>
-                        <Text style={styles.filmOtherStyle} numberOfLines={1}> Tür : {this.props.item.Genre}</Text>
-                        <Text style={styles.filmOtherStyle} numberOfLines={1}> Derece :  {this.props.item.imdbRating}</Text>
+                        <Text style={styles.filmNameStyle} numberOfLines={2}> {this.props.item.title} </Text>
+                        <Text style={styles.filmOtherStyle} numberOfLines={1}> Yıl : {this.props.item.year} </Text>
+                        <Text style={styles.filmOtherStyle} numberOfLines={1}> Tür : {this.props.item.genre}</Text>
                         <View style={{ flexDirection: 'row', margin: 10 }}>
                             <Image source={(require('../../Images/star.png'))} style={{ width: 16, height: 16 }} />
                             <Text style={styles.filmOtherStyle}>{this.props.item.imdbRating}</Text>

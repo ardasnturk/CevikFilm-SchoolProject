@@ -24,8 +24,8 @@ class AddFilm extends Component {
             title: '',
             year: '',
             genre: '',
+            id: '',
             imdbRating: '',
-            kinopoiskRating: '',
             plot: '',
             director: '',
             writer: '',
@@ -36,15 +36,15 @@ class AddFilm extends Component {
 
     componentWillMount() {
         if (this.props.navigation.getParam('filmDetals')) {
-            const { title, year, genre, director, writer, actors, Plot, awards, poster, imdbRating, kinopoiskRating, Images } = this.props.navigation.getParam('filmDetals')
-            this.setState({ plot: Plot,
+            const { title, id, year, genre, director, writer, actors, plot, awards, poster, imdbRating, images } = this.props.navigation.getParam('filmDetals')
+            this.setState({ plot,
+                            id,
                             poster,
                             title,
                             year,
                             genre,
                             imdbRating,
-                            images: Images,
-                            kinopoiskRating,
+                            images,
                             director,
                             writer,
                             actors,
@@ -209,13 +209,13 @@ class AddFilm extends Component {
     }
 
     uploadFilm() {
-        const { title, year, genre, imdbRating, kinopoiskRating, director, writer, actors, awards, poster, images, plot } = this.state;
-        // title.length > 0 && year.length > 3 && genre.length > 0 && imdbRating.length > 0 && kinopoiskRating.length > 0 && director.length > 0 && writer.length > 0 && actors.length > 0 && awards.length > 0 && poster.length > 0 && images.length > 0 && plot.length > 0
-        if (true) {
+        const { title, year, genre, imdbRating, director, writer, actors, awards, poster, images, plot } = this.state;
+        // title.length > 0 && year.length > 3 && genre.length > 0 && imdbRating.length > 0 && director.length > 0 && writer.length > 0 && actors.length > 0 && awards.length > 0 && poster.length > 0 && images.length > 0 && plot.length > 0
+        if (title.length > 0 && year.length > 3 && genre.length > 0 && imdbRating.length > 0 && director.length > 0 && writer.length > 0 && actors.length > 0 && awards.length > 0 && poster.length > 0 && images.length > 0 && plot.length > 0) {
             return (
                 <TouchableOpacity
                     style={{ backgroundColor: '#85B958', width: width - 20, height: 50, borderWidth: 1, alignItems: 'center', justifyContent: 'center', borderRadius: 5, borderColor: 'gray' }}
-                    onPress={() => this.uploadFilm()}
+                    onPress={() => this.upload()}
                     >
                         <Text style={{ fontSize: 17, color: 'white' }}> Filmi Yükle </Text>
                 </TouchableOpacity>
@@ -225,7 +225,7 @@ class AddFilm extends Component {
                 <TouchableOpacity
                     disabled={true}
                     style={{ backgroundColor: '#CC0611', width: width - 20, height: 50, borderWidth: 1, alignItems: 'center', justifyContent: 'center', borderRadius: 5, borderColor: 'gray' }}
-                    onPress={() => this.uploadFilm()}
+                    onPress={() => this.upload()}
                     >
                         <Text style={{ fontSize: 17, color: 'white' }}> Tüm Bilgileri Doldurun </Text>
                 </TouchableOpacity>
@@ -233,7 +233,63 @@ class AddFilm extends Component {
         }
     }
 
+    deleteFilm() {
+        const { id } = this.state;
+        if (id !== '') {
+            return (
+                <TouchableOpacity
+                style={{ backgroundColor: '#CC0611', width: width - 20, height: 50, borderWidth: 1, alignItems: 'center', justifyContent: 'center', borderRadius: 5, borderColor: 'gray' }}
+                onPress={() => this.delete()}
+                >
+                    <Text style={{ fontSize: 17, color: 'white' }}> Filmi Sil </Text>
+                </TouchableOpacity>
+            )
+        }
+    }
+
+    upload() {
+        const { title, id, year, genre, imdbRating, director, writer, actors, awards, poster, images, plot } = this.state;
+        // const formData = new FormData();
+        // formData.append('title', title);
+        // formData.append('year', year);
+        // formData.append('imdbRating', imdbRating);
+        // formData.append('director', director);
+        // formData.append('writer', writer);
+        // formData.append('actors', actors);
+        // formData.append('awards', awards);
+        // formData.append('poster', poster);
+        // formData.append('plot', plot);
+        // formData.append('images', images);
+        // formData.append('genre', genre);
+        // return fetch('http://example.com/api/v1/registration', {
+        //     method: 'POST',
+        //     body: formData
+        // })
+        // .then(response => response.json());
+        if (id !== null && id !== undefined && id !== '') {
+            firebase.database().ref(`/Films/${id}/`)
+            .update({ title, id, year, genre, imdbRating, director, writer, actors, awards, poster, images, plot })
+            .catch((error) => alert(error.message))
+            .then(() => alert('Film Güncellenmiştir.'))
+        } else {
+            let date = new Date().getTime();
+            firebase.database().ref(`/Films/${date}/`)
+            .set({ title, id: date, year, genre, imdbRating, director, writer, actors, awards, poster, images, plot })
+            .catch((error) => alert(error.message))
+            .then(() => alert('Film Eklenmiştir.'));
+        }        
+    }
+
+    delete() {
+        const { id } = this.state;
+        firebase.database().ref(`/Films/${id}/`)
+            .remove()
+            .catch((error) => alert(error.message))
+            .then(() => alert('Film Silinmiştir.'))
+    }
+
     render() {
+        console.log(this.state.id)
         return (
             <ScrollView style={styles.container}>
                 <View style={{ flexDirection: 'row', alignSelf: 'center', alignItems: 'center' }}>
@@ -269,13 +325,6 @@ class AddFilm extends Component {
                     placeholderTextColor='grey'
                     onChangeText={(imdbRating) => this.setState({imdbRating})}
                     value={this.state.imdbRating}
-                    />
-                    <TextInput
-                    style={styles.textInputOtherStyle}
-                    placeholder='Kinopoist Rating'
-                    placeholderTextColor='grey'
-                    onChangeText={(kinopoiskRating) => this.setState({kinopoiskRating})}
-                    value={this.state.kinopoiskRating}
                     />
                     <TextInput
                     style={styles.textInputOtherStyle}
@@ -320,6 +369,9 @@ class AddFilm extends Component {
                 </View>
                 <View style={{ alignItems: 'center', marginTop: 10 }}>
                     {this.uploadFilm()}
+                </View>
+                <View style={{ alignItems: 'center', marginTop: 10 }}>
+                    {this.deleteFilm()}
                 </View>
             </ScrollView>
         );

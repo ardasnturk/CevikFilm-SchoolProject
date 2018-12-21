@@ -8,6 +8,7 @@ import { View,
     TouchableWithoutFeedback,
     StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
+import firebase from 'firebase';
 import exampleFilms from '../../Example/Film.json';
 
 let width = Dimensions.get('window').width;
@@ -34,8 +35,30 @@ class CategorySection extends Component {
         //     }
         // }
         // this.setState({ data: catArray });
+        this.getFilm();
+        //this.makeRemoteRequest();
+    }
 
-        this.makeRemoteRequest();
+    getFilm() {
+        let catArr = [];
+        this.setState({ loading: true });
+        const filmCategory = this.props.navigation.getParam('selectCat');
+        firebase.database().ref('/Films/')
+        .once('value', snap => {
+            let arr = Object.values(snap.val())
+            for (let i = 0; i < arr.length; i++) {
+                const element = arr[i];
+                if (element.genre.includes(filmCategory)) {
+                    catArr.push(element);
+                }
+            }
+            this.setState({ data: catArr,
+                            loading: false })
+        })
+        .catch(error => {
+            this.setState({ error, loading: false })
+            alert(error.message);
+        })
     }
 
     makeRemoteRequest = () => {
@@ -107,7 +130,6 @@ class FilmListItem extends Component {
                         <Text style={styles.filmNameStyle} numberOfLines={2}> {this.props.item.title} </Text>
                         <Text style={styles.filmOtherStyle} numberOfLines={1}> Yıl : {this.props.item.year} </Text>
                         <Text style={[styles.filmOtherStyle, { width: width - 120 }]} numberOfLines={2}> Tür : {this.props.item.genre}</Text>
-                        <Text style={styles.filmOtherStyle} numberOfLines={1}> Derece :  {this.props.item.imdbRating}</Text>
                         <View style={{ flexDirection: 'row', margin: 10 }}>
                             <Image source={(require('../../Images/star.png'))} style={{ width: 16, height: 16 }} />
                             <Text style={styles.filmOtherStyle}>{this.props.item.imdbRating}</Text>

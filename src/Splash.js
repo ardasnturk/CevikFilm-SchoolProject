@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, StatusBar } from 'react-native';
+import firebase from 'firebase';
 
 class Splash extends Component {
     constructor(props) {
@@ -10,9 +11,9 @@ class Splash extends Component {
     }
 
     componentWillMount() {
-        setTimeout(() => {
-            this.props.navigation.navigate('Main');
-        }, 10);
+        firebase.auth().onAuthStateChanged(user => {
+            this.props.navigation.navigate(user ? 'Main' : 'Login')
+        })
     }
 
     render() {
@@ -22,7 +23,7 @@ class Splash extends Component {
                 backgroundColor="#191919"
                 barStyle="light-content"
                 />
-                <Text style={{ color: 'white' }}>Splash</Text>
+                <Text style={{ color: 'white' }}>Çevik Film</Text>
             </View>
         );
     }
